@@ -4,8 +4,11 @@ import ListItems from './ListItems';
  const List = ({listx}) =>{
   return(
     
- 
-    <ListItems valuex={i} />
+    <>
+      <ul id='list'>
+        {listx.map((list  => <ListItems valuex ={list}/>))}
+      </ul>
+    </>
     
   
   )
